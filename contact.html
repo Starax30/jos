@@ -37,24 +37,19 @@
                 </article>
     
                 <article>
-                    <form class="row g-3" netlify>
-                        <div class="col-md-12">
-                            <label for="name" class="form-label">Naam</label>
-                            <input type="text" class="form-control" id="name" placeholder="Naam" required>
-                        </div>
-
-                        <div class="col-12">
-                            <label for="subject" class="form-label">Onderwerp</label>
-                            <input type="text" class="form-control" id="subject" placeholder="Onderwerp van uw bericht" required>
-                        </div>
-                        <div class="col-12">
-                            <label for="message" class="form-label">Bericht</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="Schrijf hier uw keuze..." required></textarea>
-                        </div>
-                        <div class="col-12">
-                            <button type="submit" class="btn btn-primary">Verstuur bericht</button>
-                        </div>
-                    </form>
+                    <form name="contact" method="POST" data-netlify="true">
+                        <p>
+                          <label >Naam:</label>
+                          <input class="col-12 form-control" type="text" name="name" />
+                        </p>
+                        <p>
+                          <label >antwoord: </label>
+                          <textarea class="col-12 form-control" name="Schrijf hier uw keuze..."></textarea>
+                        </p>
+                        <p>
+                          <button type="submit" class="btn btn-primary">Verstuur</button>
+                        </p>
+                      </form>
                 </article>
             </section>
 
